@@ -102,6 +102,56 @@ section{
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
 }
+@media screen and (max-width:768px) {
+    header h1{
+        font-size: 20px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: start;
+        gap: 40px;
+
+    }
+    nav li{
+        font-size: 20px;
+    }
+    #Home{
+        display: flex;
+        justify-content: center;
+    }
+    .cirle{
+        right: 0px;
+        left:80px;
+        bottom: 100px;
+        height: 25%;
+    }
+    .cirle img{
+        height: 200px;
+    }
+    .cirle img:hover{
+        height: 250px;
+    }
+    .about_me{
+        left: 5%;
+        bottom: 30%;
+    }
+    .about_me h2{
+        font-size: 35px;
+    }
+    .about_me p{
+        font-size: 20px;
+        position: relative;
+        right: 35%;
+
+    }
+    .container-proyects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        display: none;
+    }
+
+}
 .img-proyects{
     width: 200px;
     height: 200px;
@@ -110,4 +160,9 @@ section{
 .proyect-img{
     width: 200px;
     height: 200px;
+}
+footer{
+    width: 100%;
+    background-color: aquamarine;
+    height: 100px;
 }
